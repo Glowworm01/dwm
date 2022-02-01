@@ -5,8 +5,7 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "scientifica:style=Medium size=13" };
-static const char dmenufont[]       = "scientifica:style=Medium size=10";
+static const char *fonts[]          = { "Cascadia Code:style=Regular:size=11" };
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -16,12 +15,14 @@ static const char col_purple1[]     = "#8080ff";
 static const char col_purple2[]     = "#9999ff";
 static const char col_white[]       = "#ffffff";
 static const char col_black[]       = "#000000";
+static const char col_nord1[]	    = "#12131a";
+static const char col_nord2[]	    = "#eff1f9";
 static const unsigned int baralpha = 0x32;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_white, col_black, col_black },
-	[SchemeSel]  = { col_black, col_white,  col_white  },
+	[SchemeNorm] = { col_nord2, col_nord1, 	col_black },
+	[SchemeSel]  = { col_nord1, col_nord2,  col_white  },
 };
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border     */
